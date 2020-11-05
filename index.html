@@ -76,7 +76,7 @@
     <div class="container mt-5">
         <div class="row">
             <!-- Games I Play Carousel -->
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-6 col-md-10 col-sm-12 text-center">
                 <h1 class="text-white">Games I Play</h1>
                 <div id="gameCarouselIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -109,7 +109,7 @@
                                 <h5>World of Warcraft</h5>
                             </div>
                         </div>
-                        
+
                     </div>
                     <a class="carousel-control-prev" href="#gameCarouselIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <!-- Other Streamers Carousel -->
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-6 col-md-10 col-sm-12 text-center">
                 <h1 class="text-white">Recommended Streams</h1>
                 <div id="streamerCarouselIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -133,18 +133,25 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/Genshin_impact.png" alt="Genshin Impact Slide">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div id="cali-embed">
+                                </div>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100"
-                                src="images/heroes_of_the_storm_hots_video_game-wallpaper-2400x1350.jpg"
-                                alt="Heroes of the Storm Slide">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div id="poy-embed"></div>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/Overwatch.jpg" alt="Overwatch Slide">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div id="nick-embed"></div>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/Wow_Wallpaper.jpg" alt="World of Warcraft Slide">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div id="poon-embed"></div>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#streamerCarouselIndicators" role="button" data-slide="prev">
@@ -159,6 +166,42 @@
             </div>
         </div>
     </div>
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+        new Twitch.Embed("cali-embed", {
+            width: 854,
+            height: 480,
+            channel: "Calicags",
+
+        });
+    </script>
+    <script type="text/javascript">
+        new Twitch.Embed("poy-embed", {
+            width: 854,
+            height: 480,
+            channel: "Poyzun",
+
+        });
+    </script>
+    <script type="text/javascript">
+        new Twitch.Embed("nick-embed", {
+            width: 854,
+            height: 480,
+            channel: "Nick_Beckwith",
+
+        });
+    </script>
+    <script type="text/javascript">
+        new Twitch.Embed("poon-embed", {
+            width: 854,
+            height: 480,
+            channel: "poony",
+
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
