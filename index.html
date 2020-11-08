@@ -144,6 +144,7 @@
                         <li data-target="#streamerCarouselIndicators" data-slide-to="1"></li>
                         <li data-target="#streamerCarouselIndicators" data-slide-to="2"></li>
                         <li data-target="#streamerCarouselIndicators" data-slide-to="3"></li>
+                        <li data-target="#streamerCarouselIndicators" data-slide-to="4"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -165,6 +166,11 @@
                         <div class="carousel-item">
                             <div class="embed-responsive embed-responsive-16by9">
                                 <div id="poon-embed"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div id="sam-embed"></div>
                             </div>
                         </div>
                     </div>
@@ -243,6 +249,14 @@
             width: 854,
             height: 480,
             channel: "poony",
+
+        });
+    </script>
+    <script type="text/javascript">
+        new Twitch.Embed("sam-embed", {
+            width: 854,
+            height: 480,
+            channel: "senpaisamurman",
 
         });
     </script>
