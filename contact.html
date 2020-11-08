@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,82 +11,90 @@
     <script src="https://kit.fontawesome.com/26490581bf.js" crossorigin="anonymous"></script>
     <title>Contact Me</title>
 </head>
-<body style="background-image: url('images/repeat_background.jpeg'); background-repeat: repeat;">
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="#" class="navbar-brand ml-5">
-        <img src="images/Scoopy.png" alt="Scoop Logo" width="60" height="20" class="img-fluid">
-    </a>
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a href="index.html" class="nav-link active"> Home </a>
-        </li>
-        <li class="nav-item">
-            <a href="merch.html" class="nav-link"> Merch </a>
-        </li>
-        <li class="nav-item">
-            <a href="contact.html" class="nav-link"> Contact Me </a>
-        </li>
-    </ul>
-    <ul class="navbar-nav mr-5">
-        <li class="nav-item">
-            <a href="https://twitch.tv/itsScoopy" class="nav-link"><i class="fab fa-twitch fa-3x"></i></a>
-        </li>
-    </ul>
-</nav>
-<!-- Welcome to Contact -->
-<div class="text-dark text-center mt-5">
-    <h1 class="mt-5">Contact Me</h1>
-    <p class="col-lg-6 offset-3 mt-3">In order for us to scoop up as many members as possible, it's important
-        to know what we're doing well, what we could improve on, and what our community wants to see. 
-        Your input and/or feedback is greatly appreaciated!
-    </p>
-    <form class="mt-5 col-lg-6 offset-3">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control text-center" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group mt-5">
-          <label for="exampleFormControlSelect1">Example select</label>
-          <select class="form-control text-center" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group text-center mt-5">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group mt-5">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="button" class="btn btn-secondary mb-5">Secondary</button>
-      </form>
 
-</div>
-<!-- Footer -->
-<div class="container-fluid bg-dark text-light">
-    <div class="row">
-        <div class="col-sm-4 p-3 text-right">
-            <a href="https://github.com/xScoopy" class="text-light"><i class="fab fa-github-square fa-3x"></i></a>
+<body style="background-image: url('images/repeat_background.jpeg'); background-repeat: repeat;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand ml-5">
+            <img src="images/Scoopy.png" alt="Scoop Logo" width="60" height="20" class="img-fluid">
+        </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active"> Home </a>
+            </li>
+            <li class="nav-item">
+                <a href="merch.html" class="nav-link"> Merch </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link"> Contact Me </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-5">
+            <li class="nav-item">
+                <a href="https://twitch.tv/itsScoopy" class="nav-link"><i class="fab fa-twitch fa-3x"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Welcome to Contact -->
+    <div class="text-dark text-center mt-5">
+        <h1 class="mt-5">Contact Me</h1>
+        <p class="col-lg-6 col-md-6 col-sm-6 col-6 offset-3 mt-3">In order for us to scoop up as many members as possible, it's important
+            to know what we're doing well, what we could improve on, and what our community wants to see.
+            Your input and/or feedback is greatly appreaciated!
+        </p>
+        <form class="mt-5 col-lg-6 offset-md-3 col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="form_email">Email address</label>
+                <input type="email" class="form-control text-center" id="form_email"
+                    placeholder="name@example.com" name="email">
+            </div>
+            <div class="form-group mt-5">
+                <label for="form_likely">How likely are you to join the Scoop Squad?</label>
+                <select class="form-control text-center" id="form_likely">
+                    <option>Not at all likely</option>
+                    <option>Somewhat Likely</option>
+                    <option>Very Likely</option>
+                    <option>I'm Already a Scoopster!</option>
+                    <option>I'm here for something else (please provide description below)</option>
+                </select>
+            </div>
+            <div class="form-group text-center mt-5">
+                <label for="form_interests">What brings you to the contact page?(cmd or ctl click for multiple selections</label>
+                <select multiple class="form-control" id="form_interests">
+                    <option>File a complaint</option>
+                    <option>Apply for a Role in the community</option>
+                    <option>Provide Feedback on the Stream</option>
+                    <option>Collaboration Opportunity</option>
+                    <option>Just saying 'Hey!'</option>
+                </select>
+            </div>
+            <div class="form-group mt-5">
+                <label for="form_textarea">Please provide any elaboration and reason for contact here:</label>
+                <textarea class="form-control" id="form_textarea" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-secondary mb-3">
+                Submit
+            </button>
+        </form>
+        
+        
+       
+        <!-- Footer -->
+        <div class="container-fluid bg-dark text-light mt-2">
+            <div class="row">
+                <div class="col-sm-4 p-3 text-right">
+                    <a href="https://github.com/xScoopy" class="text-light"><i
+                            class="fab fa-github-square fa-3x"></i></a>
+                </div>
+                <div class="col-sm-4 p-3 text-center">
+                    <a href="https://www.linkedin.com/in/jeremiah-leary-31b76ba3/" class="text-light"><i
+                            class="fab fa-linkedin fa-3x"></i></a>
+                </div>
+                <div class="col-sm-4 p-3 text-left align-self-center">
+                    <p class="text-light">&copy;2020 xScoopy</p>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4 p-3 text-center">
-            <a href="https://www.linkedin.com/in/jeremiah-leary-31b76ba3/" class="text-light"><i class="fab fa-linkedin fa-3x"></i></a>
-        </div>
-        <div class="col-sm-4 p-3 text-left align-self-center">
-            <p class="text-light">&copy;2020 xScoopy</p>
-        </div>
-    </div>
-</div>
 </body>
+
 </html>
